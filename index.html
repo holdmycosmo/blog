@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" src="src/images/icon.ico" href="">
+    <title>Inštrukcije Veronika</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700|Playfair+Display:700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header" id="domov-id">
+            <div class="container">
+				<div style="float: left;;align-items: right;">
+					<img src="src/images/icon.ico" alt="Girl One" width="150" height="150">
+					</div>
+				<div class="site-header-inner" style="width: 60%;display: inline-grid; grid-gap: 0px; grid-template-columns: auto;grid-template-rows: repeat(4, 30px)">
+					<p style="color: white;">Veronika Vodeb <br>
+						</p>
+					<div style="float: left;margin-top: 65px;white-space:nowrap">
+						<p style="display: inline;color: white;"><img src="src/images/phone-icon.png" alt="Phone Icon" width="25" height="25" style="display: inline;margin-right: 10px;">+386 41 997 690 <br></p>
+						<a href="mailto:veronika.vodeb@gmail.com" style="display: inline;color:white"><img src="src/images/email-icon.png" alt="Email Icon" width="25" height="25" style="display: inline;margin-right: 10px;">veronika.vodeb@gmail.com <br></a>
+						<a href="https://api.whatsapp.com/send?phone=38641997690" style="display: inline;color: rgb(125, 243, 125);"><img src="src/images/whatsapp-icon.png" alt="WhatsApp Icon" width="25" height="25" style="display: inline;margin-right: 10px;">Chat +386 41 997 690<br></a>
+						<a href="https://api.whatsapp.com/send?phone=38641997690" style="display: inline;color: rgb(143, 226, 252);"><img src="src/images/skype-icon.png" alt="WhatsApp Icon" width="25" height="25" style="display: inline;margin-right: 10px;">veronika.vodeb</a>
+						</div>
+						<!-- <a class="button" style="background-color: Transparent;background-repeat:no-repeat;border: none;cursor:pointer;overflow: hidden;outline:none;padding-top: 30px;font-size: 20px;z-index: 1;" href="#domov-id">Domov</a>
+						<div style="float: none;">
+						<a class="button" style="background-color: Transparent;background-repeat:no-repeat;border: none;cursor:pointer;overflow: hidden;outline:none;padding-top: 40px;font-size: 20px;z-index: 1;float:left;margin-top: 10px;text-align: center;" href="#o-meni-id">O meni</a>
+						</div>
+						<div style="float: none;">
+						<a class="button" style="background-color: Transparent;background-repeat:no-repeat;border: none;cursor:pointer;overflow: hidden;outline:none;padding-top: 40px;font-size: 20px;z-index: 1;float: left;margin-top: 10px;text-align: center;" href="#kaj-ponujam-id">Kaj ponujam?</a>
+						</div>
+						<div style="float: none;">
+						<a class="button" style="background-color: Transparent;background-repeat:no-repeat;border: none;cursor:pointer;overflow: hidden;outline:none;padding-top: 40px;font-size: 20px;z-index: 1;float: left;margin-top: 10px;text-align: center;color: rgb(249, 66, 95)!important;" href="#izberi-termin-id">Seznam prostih terminov</a>
+						</div>
+						<div style="float: none;">
+						<a class="button" style="background-color: Transparent;background-repeat:no-repeat;border: none;cursor:pointer;overflow: hidden;outline:none;padding-top: 40px;font-size: 20px;z-index: 1;float: left;margin-top: 10px;text-align: center;" href="#cenik-id">Cenik</a> -->
+					</div>
+                    <!-- <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+								<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+									<title>Matematika in fizika inštrukcije</title>
+								    <defs>
+								        <linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="logo-a">
+								            <stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
+								            <stop stop-color="#47A1F9" stop-opacity=".16" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="logo-b">
+								            <stop stop-color="#FDFFDA" offset="0%"/>
+								            <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%"/>
+								            <stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd">
+								        <path d="M22 19.22c6.627 0 9.593-6.415 9.593-13.042C31.593-.45 28.627.007 22 .007S10 2.683 10 9.31c0 6.628 5.373 9.91 12 9.91z" fill="url(#logo-a)"/>
+								        <path d="M13.666 31.889c7.547 0 10.924-7.307 10.924-14.854 0-7.547-3.377-7.027-10.924-7.027C6.118 10.008 0 13.055 0 20.603c0 7.547 6.118 11.286 13.666 11.286z" fill="url(#logo-b)" transform="matrix(-1 0 0 1 24.59 0)"/>
+									</g>
+								</svg>
+							</a>
+						</h1> -->
+					</div>
+				</div>
+            </div>
+        </header>
+
+        <main style="margin-top: -650px;">
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner" style="padding-top: 70px">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0">Inštrukcije matematike in fizike</h1>
+	                        <p class="hero-paragraph">Pomoč pri matematiki in fiziki za osnovnošolce, srednješolce in gimnazijce.</p>
+							<div class="hero-cta"><a class="button button-primary button-shadow" href="#kaj-ponujam-id" style="width: 400px; margin-bottom: 20px;">Urnik prostih terminov</a><a class="button button-shadow" href="#kaj-ponujam-id" style="width: 400px;margin-bottom: 20px;">Vrste inštrukcij</a><a class="button button-shadow" href="#kaj-ponujam-id" style="width: 400px;margin-bottom: 20px;">Cenik</a></div>
+						</div>
+						<div class="hero-app">
+							<div class="hero-app-illustration">
+								<svg width="999" height="931" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="92.827%" y1="0%" x2="53.422%" y2="80.087%" id="hero-shape-a">
+								            <stop stop-color="#F9425F" offset="0%"/>
+								            <stop stop-color="#F97C58" stop-opacity="0" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="92.827%" y1="0%" x2="53.406%" y2="80.12%" id="hero-shape-b">
+								            <stop stop-color="#47A1F9" offset="0%"/>
+								            <stop stop-color="#F9425F" stop-opacity="0" offset="80.532%"/>
+								            <stop stop-color="#FDFFDA" stop-opacity="0" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="8.685%" y1="23.733%" x2="85.808%" y2="82.837%" id="hero-shape-c">
+								            <stop stop-color="#FFF" stop-opacity=".48" offset="0%"/>
+								            <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="79.483%" y1="15.903%" x2="38.42%" y2="70.124%" id="hero-shape-d">
+								            <stop stop-color="#47A1F9" offset="0%"/>
+								            <stop stop-color="#FDFFDA" stop-opacity="0" offset="100%"/>
+								        </linearGradient>
+								        <linearGradient x1="99.037%" y1="26.963%" x2="24.582%" y2="78.557%" id="hero-shape-e">
+								            <stop stop-color="#FDFFDA" stop-opacity=".64" offset="0%"/>
+								            <stop stop-color="#F97C58" stop-opacity=".24" offset="42.952%"/>
+								            <stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+								        </linearGradient>
+								    </defs>
+								    <g fill="none" fill-rule="evenodd">
+								        <g class="hero-shape-top">
+											<g class="is-moving-object is-translating" data-translating-factor="280">
+								            	<path d="M680.188 0c-23.36 69.79-58.473 98.3-105.34 85.531-70.301-19.152-189.723-21.734-252.399 91.442-62.676 113.175-144.097 167.832-215.195 118.57C59.855 262.702 24.104 287.85 0 370.988L306.184 566.41c207.164-4.242 305.67-51.612 295.52-142.11-10.152-90.497 34.533-163.55 134.054-219.16l4.512-119.609L680.188 0z" fill="url(#hero-shape-a)" transform="translate(1)"/>
+											</g>
+											<g class="is-moving-object is-translating" data-translating-factor="100">
+												<path d="M817.188 222c-23.36 69.79-58.473 98.3-105.34 85.531-70.301-19.152-189.723-21.734-252.399 91.442-62.676 113.175-144.097 167.832-215.195 118.57-47.399-32.841-83.15-7.693-107.254 75.445L443.184 788.41c207.164-4.242 305.67-51.612 295.52-142.11-10.152-90.497 34.533-163.55 134.054-219.16l4.512-119.609L817.188 222z" fill="url(#hero-shape-b)" transform="rotate(-53 507.635 504.202)"/>
+											</g>
+								        </g>
+								        <g transform="translate(191 416)">
+											<g class="is-moving-object is-translating" data-translating-factor="50">
+								            	<circle fill="url(#hero-shape-c)" cx="336" cy="190" r="190"/>
+											</g>
+											<g class="is-moving-object is-translating" data-translating-factor="80">
+								            	<path d="M683.766 133.043c-112.048-90.805-184.688-76.302-217.92 43.508-33.23 119.81-125.471 124.8-276.722 14.972-3.156 120.356 53.893 200.09 171.149 239.203 175.882 58.67 346.695-130.398 423.777-239.203 51.388-72.536 17.96-92.03-100.284-58.48z" fill="url(#hero-shape-d)"/>
+											</g>
+											<g class="is-moving-object is-translating" data-translating-factor="100">
+												<path d="M448.206 223.247c-97.52-122.943-154.274-117.426-170.26 16.55C261.958 373.775 169.717 378.766 1.222 254.77c-9.255 95.477 47.794 175.211 171.148 239.203 185.032 95.989 424.986-180.108 424.986-239.203 0-39.396-49.717-49.904-149.15-31.523z" fill="url(#hero-shape-e)" transform="matrix(-1 0 0 1 597.61 0)"/>
+											</g>
+										</g>
+								    </g>
+								</svg>
+							</div>
+							<img class="device-mockup" src="src/images/wordcloud copy.png" alt="App preview">
+                            <div class="hero-app-dots hero-app-dots-1">
+								<svg width="124" height="75" xmlns="http://www.w3.org/2000/svg">
+								    <g fill="none" fill-rule="evenodd">
+								        <path fill="#FFF" d="M33.392 0l3.624 1.667.984 3.53-1.158 3.36L33.392 10l-3.249-1.639L28 5.196l1.62-3.674z"/>
+								        <path fill="#7487A3" d="M74.696 3l1.812.833L77 5.598l-.579 1.68L74.696 8l-1.624-.82L72 5.599l.81-1.837z"/>
+								        <path fill="#556B8B" d="M40.696 70l1.812.833.492 1.765-.579 1.68-1.725.722-1.624-.82L38 72.599l.81-1.837z"/>
+								        <path fill="#7487A3" d="M4.314 37l2.899 1.334L8 41.157l-.926 2.688L4.314 45l-2.6-1.31L0 41.156l1.295-2.94zM49.314 32l2.899 1.334.787 2.823-.926 2.688L49.314 40l-2.6-1.31L45 36.156l1.295-2.94z"/>
+								        <path fill="#556B8B" d="M99.696 56l1.812.833.492 1.765-.579 1.68-1.725.722-1.624-.82L97 58.599l.81-1.837zM112.696 37l1.812.833.492 1.765-.579 1.68-1.725.722-1.624-.82L110 39.599l.81-1.837zM82.696 37l1.812.833.492 1.765-.579 1.68-1.725.722-1.624-.82L80 39.599l.81-1.837zM122.618 57l1.087.5.295 1.059-.347 1.008-1.035.433-.975-.492-.643-.95.486-1.101z"/>
+								    </g>
+								</svg>
+                            </div>
+							<div class="hero-app-dots hero-app-dots-2">
+								<svg width="124" height="75" xmlns="http://www.w3.org/2000/svg">
+								    <g fill="none" fill-rule="evenodd">
+								        <path fill="#556B8B" d="M33.392 0l3.624 1.667.984 3.53-1.158 3.36L33.392 10l-3.249-1.639L28 5.196l1.62-3.674zM74.696 3l1.812.833L77 5.598l-.579 1.68L74.696 8l-1.624-.82L72 5.599l.81-1.837zM40.696 70l1.812.833.492 1.765-.579 1.68-1.725.722-1.624-.82L38 72.599l.81-1.837zM4.314 37l2.899 1.334L8 41.157l-.926 2.688L4.314 45l-2.6-1.31L0 41.156l1.295-2.94zM49.314 32l2.899 1.334.787 2.823-.926 2.688L49.314 40l-2.6-1.31L45 36.156l1.295-2.94z"/>
+								        <path fill="#FFF" d="M99.696 56l1.812.833.492 1.765-.579 1.68-1.725.722-1.624-.82L97 58.599l.81-1.837z"/>
+								        <path fill="#556B8B" d="M112.696 37l1.812.833.492 1.765-.579 1.68-1.725.722-1.624-.82L110 39.599l.81-1.837z"/>
+								        <path fill="#FFF" d="M82.696 37l1.812.833.492 1.765-.579 1.68-1.725.722-1.624-.82L80 39.599l.81-1.837z"/>
+								        <path fill="#556B8B" d="M122.618 57l1.087.5.295 1.059-.347 1.008-1.035.433-.975-.492-.643-.95.486-1.101z"/>
+								    </g>
+								</svg>
+							</div>
+						</div>
+                    </div>
+                </div>
+			</section>
+			
+			<section class="media section">
+                <div class="container-sm">
+                    <div class="media-inner section-inner">
+                        <div class="media-header text-center">
+							<h2 class="section-title mt-0" id="o-meni-id">O meni</h2>
+							<div class="o-meni-row">
+								<div class="o-meni-column" style="float: left;width: 33.33%;padding: 5px;padding-left: 50px;">
+									<img src="src/images/girl-swear-icon.png" alt="Girl Waving" width="200" height="400">
+								</div>
+								<div class="o-meni-column" style="float: left;width: 56.33%;padding: 5px;">
+									<p style="z-index: 1;text-align: left;">Moje ime je Veronika in sem doktorska študentka fizike na Univerzi v Novi Gorici.</p>
+								</div>
+							</div>
+                        </div>
+						<div class="media-canvas">
+							<svg width="800" height="450" viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+							    <defs>
+							        <linearGradient x1="100%" y1="0%" x2="0%" y2="100%" id="media-canvas">
+							            <stop stop-color="#06101F" offset="0%"/>
+							            <stop stop-color="#1D304B" offset="100%"/>
+							        </linearGradient>
+							    </defs>
+							    <rect width="800" height="450" rx="8" fill="url(#media-canvas)" fill-rule="evenodd"/>
+							</svg>
+							<div class="media-control">
+								<svg width="96" height="96" viewBox="0 0 96 96" xmlns="http://www.w3.org/2000/svg">
+								    <defs>
+								        <linearGradient x1="87.565%" y1="15.873%" x2="17.086%" y2="80.538%" id="media-control">
+								            <stop stop-color="#FFF" stop-opacity=".64" offset="0%"/>
+								            <stop stop-color="#FFF" offset="100%"/>
+								        </linearGradient>
+										<filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="media-shadow">
+                                            <feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter"></feOffset>
+                                            <feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"></feGaussianBlur>
+                                            <feColorMatrix values="0 0 0 0 0.024 0 0 0 0 0.064 0 0 0 0 0.12 0 0 0 0.24 0" in="shadowBlurOuter"></feColorMatrix>
+                                        </filter>
+								    </defs>
+								    <!-- <g fill="none" fill-rule="evenodd">
+								        <circle fill="#FFF" cx="48" cy="48" r="48" style="mix-blend-mode:multiply;filter:url(#media-shadow)"/>
+										<circle fill="url(#media-control)" cx="48" cy="48" r="48"/>
+								        <path d="M44.6 39.2a1.001 1.001 0 0 0-1.6.8v18a1.001 1.001 0 0 0 1.6.8l12-9a.998.998 0 0 0 0-1.6l-12-9z" fill="#1D304B"/>
+								    </g> -->
+								</svg>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features section">
+                <div class="container" id="kaj-ponujam-id">
+					<div class="features-inner section-inner has-bottom-divider">
+						<h2 class="section-title mt-0">Vrste inštrukcij</h2>
+                        <div class="features-wrap">
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+										    <defs>
+										        <linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="feature-1-a">
+										            <stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
+										            <stop stop-color="#47A1F9" stop-opacity=".16" offset="100%"/>
+										        </linearGradient>
+										        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-1-b">
+										            <stop stop-color="#FDFFDA" offset="0%"/>
+										            <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%"/>
+										            <stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										    </defs>
+										    <g fill="none" fill-rule="evenodd">
+										        <path d="M24 48H0V24C0 10.745 10.745 0 24 0h24v24c0 13.255-10.745 24-24 24" fill="url(#feature-1-a)"/>
+										        <path d="M40 64H16V40c0-13.255 10.745-24 24-24h24v24c0 13.255-10.745 24-24 24" fill="url(#feature-1-b)"/>
+										    </g>
+										</svg>
+                                    </div>
+                                    <h3 class="feature-title mt-24">Inštrukcije matematike</h3>
+                                    <p class="text-sm mb-0">za osnovno šolo, srednje šole in gimnazije. Preberite več ali rezervirajte svoj termin.</p>
+                                </div>
+                            </div>
+							<div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<svg width="68" height="64" xmlns="http://www.w3.org/2000/svg">
+										    <defs>
+										        <linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="feature-2-a">
+										            <stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
+										            <stop stop-color="#47A1F9" stop-opacity=".16" offset="100%"/>
+										        </linearGradient>
+										        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-2-b">
+										            <stop stop-color="#FDFFDA" offset="0%"/>
+										            <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%"/>
+										            <stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										    </defs>
+										    <g fill="none" fill-rule="evenodd">
+										        <path d="M9.941 63.941v-24c0-13.255 10.745-24 24-24h24v24c0 13.255-10.745 24-24 24h-24z" fill="url(#feature-2-a)" transform="rotate(45 33.941 39.941)"/>
+										        <path d="M16 0v24c0 13.255 10.745 24 24 24h24V24C64 10.745 53.255 0 40 0H16z" fill="url(#feature-2-b)"/>
+										    </g>
+										</svg>
+                                    </div>
+                                    <h3 class="feature-title mt-24">Inštrukcije fizike</h3>
+                                    <p class="text-sm mb-0">za osnovno šolo, srednje šole in gimnazije. Preberite več ali rezervirajte svoj termin.</p>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+										    <defs>
+										        <linearGradient x1="50%" y1="100%" x2="50%" y2="43.901%" id="feature-3-a">
+										            <stop stop-color="#F97059" stop-opacity=".798" offset="0%"/>
+										            <stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										        <linearGradient x1="58.893%" y1="100%" x2="58.893%" y2="18.531%" id="feature-3-b">
+										            <stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
+										            <stop stop-color="#47A1F9" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-3-c">
+										            <stop stop-color="#FDFFDA" offset="0%"/>
+										            <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%"/>
+										            <stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										    </defs>
+										    <g fill="none" fill-rule="evenodd">
+										        <path fill="url(#feature-3-a)" opacity=".32" d="M0 24h64v40H0z"/>
+										        <path fill="url(#feature-3-b)" d="M40 24H24L0 64h64z"/>
+										        <path d="M10 10v22c0 12.15 9.85 22 22 22h22V32c0-12.15-9.85-22-22-22H10z" fill="url(#feature-3-c)" transform="rotate(45 32 32)"/>
+										    </g>
+										</svg>
+                                    </div>
+                                    <h3 class="feature-title mt-24">Individualne inštrukcije</h3>
+                                    <p class="text-sm mb-0">so zaradi izjemne učinkovitosti najpogostejša oblika pomoči, za katero se odločajo naše stranke. Preberite več ali rezervirajte svoj termin.</p>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+										    <defs>
+										        <linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="feature-4-a">
+										            <stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
+										            <stop stop-color="#47A1F9" stop-opacity=".16" offset="100%"/>
+										        </linearGradient>
+										        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-4-b">
+										            <stop stop-color="#FDFFDA" offset="0%"/>
+										            <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%"/>
+										            <stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										    </defs>
+										    <g fill="none" fill-rule="evenodd">
+										        <path d="M24 64H0V40c0-13.255 10.745-24 24-24h24v24c0 13.255-10.745 24-24 24" fill="url(#feature-4-a)" transform="matrix(-1 0 0 1 48 0)"/>
+										        <path d="M40 48H16V24C16 10.745 26.745 0 40 0h24v24c0 13.255-10.745 24-24 24" fill="url(#feature-4-b)"/>
+										    </g>
+										</svg>
+                                    </div>
+                                    <h3 class="feature-title mt-24">Inštrukcije v dvojicah</h3>
+                                    <p class="text-sm mb-0">so odličen način za utrjevanje znanja pred testi ali izpiti, prav tako pa za posameznika tudi cenovno ugodnejše. Preberite več ali rezervirajte svoj termin.</p>
+                                </div>
+                            </div>
+							<div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+										    <defs>
+										        <linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="feature-5-a">
+										            <stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
+										            <stop stop-color="#47A1F9" stop-opacity=".16" offset="100%"/>
+										        </linearGradient>
+										        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-5-b">
+										            <stop stop-color="#FDFFDA" offset="0%"/>
+										            <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%"/>
+										            <stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										    </defs>
+										    <g fill="none" fill-rule="evenodd">
+										        <path d="M24 63H0V39c0-13.255 10.745-24 24-24h24v24c0 13.255-10.745 24-24 24" fill="url(#feature-5-a)" transform="matrix(-1 0 0 1 48 0)"/>
+										        <path d="M40 48H16V24C16 10.745 26.745 0 40 0h24v24c0 13.255-10.745 24-24 24" fill-opacity=".24" fill="url(#feature-5-a)" transform="matrix(-1 0 0 1 80 0)"/>
+										        <path d="M10.113 10.113v22c0 12.15 9.85 22 22 22h22v-22c0-12.15-9.85-22-22-22h-22z" fill="url(#feature-5-b)" transform="rotate(45 32.113 32.113)"/>
+										    </g>
+										</svg>
+                                    </div>
+                                    <h3 class="feature-title mt-24">Pomoč na domu</h3>
+                                    <p class="text-sm mb-0">se izvaja v naslednjih Slovenskih krajih z okolico: Ljubljana, Ajdovščina, Brežice, Podčetrtek.</p>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<svg width="64" height="64" xmlns="http://www.w3.org/2000/svg">
+										    <defs>
+										        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="feature-6-a">
+										            <stop stop-color="#FDFFDA" offset="0%"/>
+										            <stop stop-color="#F97059" stop-opacity=".798" offset="49.935%"/>
+										            <stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										        <linearGradient x1="58.893%" y1="100%" x2="58.893%" y2="18.531%" id="feature-6-b">
+										            <stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
+										            <stop stop-color="#47A1F9" stop-opacity="0" offset="100%"/>
+										        </linearGradient>
+										    </defs>
+										    <g fill="none" fill-rule="evenodd">
+										        <path d="M24 48H0V24C0 10.745 10.745 0 24 0h24v24c0 13.255-10.745 24-24 24" fill="url(#feature-6-a)"/>
+										        <path fill-opacity=".64" fill="url(#feature-6-b)" d="M24 29.229h40V64H0z"/>
+										    </g>
+										</svg>
+                                    </div>
+                                    <h3 class="feature-title mt-24">Pomoč preko spleta</h3>
+                                    <p class="text-sm mb-0">je zaradi enostavne dostopnosti odlična možnost za vse, ki si želite učenje opraviti na daljavo in kar iz svoje sobe. Preberite več ali rezervirajte svoj termin.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</section>
+
+
+			<section>
+				<form method="POST" data-netlify="true" id="#izberi-termin-id">
+					<div class="fields" style="text-align: center;">
+						<h2 style="margin-bottom: 30px;">Dogovori se za svoj termin</h2>
+						<div style="display: inline-block; width: 80%;">
+							<div>
+								<label for="predmet" class="h4" style="float: left;margin-bottom: -10px;margin-top: 10px;">Izberi predmet:</label>
+								<span style="display: block;overflow: hidden;padding: 0 0px 0 6px"><select class="input" name="predmet" id="predmet" style="width: 90%;float: right;"></span>
+									<option value="matematika">Matematika</option>
+									<option value="fizika">Fizika</option>
+								</select>
+							</div>
+							<div>
+								<label for="stopnja" class="h4" style="float: left;margin-bottom: -10px;margin-top: 10px;">Izberi stopnjo:</label>
+								<span style="display: block;overflow: hidden;padding: 0 0px 0 6px;"><select class="input" name="stopnja" id="stopnja" style="width: 90%;float: right;"></span>
+									<option value="osnovna-sola">Osnovna šola</option>
+									<option value="srednja-sola-1">Srednja šola, 1. letnik</option>
+									<option value="srednja-sola-1">Srednja šola, 2. letnik</option>
+									<option value="srednja-sola-1">Srednja šola, 3. letnik</option>
+									<option value="srednja-sola-1">Srednja šola, 4. letnik</option>
+									<option value="srednja-sola-1">Gimnazija, 1. letnik</option>
+									<option value="srednja-sola-1">Gimnazija, 2. letnik</option>
+									<option value="srednja-sola-1">Gimnazija, 3. letnik</option>
+									<option value="srednja-sola-1">Gimnazija, 4. letnik</option>
+								</select>
+							</div>
+							<div>
+								<label for="tip-instrukcij" class="h4" style="float: left;margin-bottom: -10px;margin-top: 10px;">Izberi tip inštrukcij:</label>
+								<span style="display: block;overflow: hidden;padding: 0 0px 0 6px"><select class="input" name="tip-instrukcij" id="tip-instrukcij" style="width: 90%;float: right;"></span>
+									<option value="ind-na-domu-lj">Individualno na domu, Ljubljana z okolico</option>
+									<option value="ind-na-domu-ajd">Individualno na domu, Ajdovščina z okolico</option>
+									<option value="ind-na-domu-nm">Individualno na domu, Novo Mesto z okolico</option>
+									<option value="ind-na-domu-br">Individualno na domu, Brežice z okolico</option>
+									<option value="ind-na-domu-pod">Individualno na domu, Podčetrtek z okolico</option>
+									<option value="dvoj-na-domu-lj">Dvojice na domu, Ljubljana z okolico</option>
+									<option value="dvoj-na-domu-ajd">Dvojice na domu, Ajdovščina z okolico</option>
+									<option value="dvoj-na-domu-nm">Dvojice na domu, Novo Mesto z okolico</option>
+									<option value="dvoj-na-domu-br">Dvojice na domu, Brežice z okolico</option>
+									<option value="dvoj-na-domu-pod">Dvojice na domu, Podčetrtek z okolico</option>
+									<option value="preko-spleta">Preko spleta</option>
+								</select>
+							</div>
+							<div>
+								<input class="input" style="color: black;" type="text" name="name" id="name" placeholder="Ime in priimek"/>
+							</div>
+							<div>
+								<input class="input" style="color: black;" type="email" name="email" id="email" placeholder="Elektronski naslov"/>
+							</div>
+							<div>
+								<input class="input" style="color: black;" type="text" name="number" id="phone-number" placeholder="Telefonska številka"/>
+							</div>
+							<div>
+								<textarea class="input textarea" style="color: black;height: 40%;" name="message" id="message" placeholder="Tvoje sporočilo ..." rows="7"></textarea>
+							</div>
+							<div class="field" style="display: inline-block;">
+								<div data-netlify-recaptcha="true">
+									
+								</div>
+							</div>
+							<li style="display: inline-block; width: 100%;">
+								<input class="button primary button-primary" type="submit" value="Pošlji sporočilo" style="width: 100%;"/>
+							</li>
+					</div>
+					</div>
+				</form>
+			</section>
+
+			
+			<section class="features section">
+                <div class="container" id="cenik-id">
+					<div class="features-inner section-inner has-bottom-divider">
+						<h2 class="section-title mt-0">CENIK 2020</h2>
+                        <div style="display: grid; grid-gap: 20px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));grid-template-rows: repeat(1, 600px);margin-top: -50px;margin-bottom: 70px;">
+							<div class="columns-cenik" style="float: left;padding: 8px;">
+								<ul class="price" style="list-style-type: none;border: 1px solid #eee;margin: 0;padding: 0;-webkit-transition: 0.3s;transition: 0.3s;">					
+								  <li class="header" style="background-color: Transparent;color: white;font-size: 25px;border-bottom: 0px solid #eee;padding: 3px;text-align: center;height: 130px;"><h3 style="font-size: 40px;line-height: 40px;">Individualno na domu</h3></li>
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;background-color: white;font-size: 15px;margin-bottom: 20px;margin-top: 20px;color: black;opacity: 0.9;">OSNOVNA ŠOLA</li>
+								  <li style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;color: rgb(249, 66, 95);font-weight: 800;">13 € / šol. uro + 5 €</li>
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 20px;text-align: center;"><a href="#" class="button button-primary" style="width: 200px;">Izberi termin</a></li>
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;background-color: white;font-size: 15px;margin-bottom: 20px;margin-top: 20px;color: black;opacity: 0.9;">SREDNJE ŠOLE IN GIMNAZIJE</li>
+								  <li style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;color: rgb(249, 66, 95);font-weight: 800;">15 € / šol. uro + 5 €</li>
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 20px;text-align: center;margin-bottom: 20px"><a href="#" class="button button-primary" style="width: 200px;">Izberi termin</a></li>
+								</ul>
+							  </div>
+				
+							<div class="columns-cenik" style="float: left;padding: 8px;">
+								<ul class="price" style="list-style-type: none;border: 1px solid #eee;margin: 0;padding: 0;-webkit-transition: 0.3s;transition: 0.3s;">					
+								  <li class="header" style="background-color: Transparent;color: white;font-size: 25px;border-bottom: 0px solid #eee;padding: 3px;text-align: center;height: 130px;"><h3 style="font-size: 40px;line-height: 40px;">Dvojice na domu</h3></li>
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;background-color: white;font-size: 15px;margin-bottom: 20px;margin-top: 20px;color: black;opacity: 0.9;">OSNOVNA ŠOLA</li>
+								  <li style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;color: rgb(249, 66, 95);font-weight: 800;">8 € / osebo / šol. uro + 5 €</li>
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 20px;text-align: center;"><a href="#" class="button button-primary" style="width: 200px;">Izberi termin</a></li>
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;background-color: white;font-size: 15px;margin-bottom: 20px;margin-top: 20px;color: black;opacity: 0.9;">SREDNJE ŠOLE IN GIMNAZIJE</li>
+								  <li style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;color: rgb(249, 66, 95);font-weight: 800;">10 € / osebo / šol. uro + 5 €</li>
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 20px;text-align: center;margin-bottom: 20px"><a href="#" class="button button-primary" style="width: 200px;">Izberi termin</a></li>
+								</ul>
+							  </div>
+				
+							<div class="columns-cenik" style="float: left;padding: 8px;">
+								<ul class="price" style="list-style-type: none;border: 1px solid #eee;margin: 0;padding: 0;-webkit-transition: 0.3s;transition: 0.3s;">					
+								  <li class="header" style="background-color: Transparent;color: white;font-size: 25px;border-bottom: 0px solid #eee;padding: 3px;text-align: center;height: 130px;"><h3 style="font-size: 40px;line-height: 40px;">Inštrukcije preko spleta</h3></li>
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;background-color: white;font-size: 15px;margin-bottom: 20px;margin-top: 20px;color: black;opacity: 0.9;">OSNOVNA ŠOLA</li>
+								  <li style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;color: rgb(249, 66, 95);font-weight: 800;">13 € / šol. uro</li>
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 20px;text-align: center;"><a href="#" class="button button-primary" style="width: 200px;">Izberi termin</a></li>
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;background-color: white;font-size: 15px;margin-bottom: 20px;margin-top: 20px;color: black;opacity: 0.9;">SREDNJE ŠOLE IN GIMNAZIJE</li>
+								  <li style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;color: rgb(249, 66, 95);font-weight: 800;">15 € / šol. uro</li>
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 20px;text-align: center;margin-bottom: 20px"><a href="#" class="button button-primary" style="width: 200px;">Izberi termin</a></li>
+								</ul>
+							  </div>
+						</div>
+
+					<h2 class="section-title mt-0">PAKETI UR</h2>
+                        <div style="display: grid; grid-gap: 50px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));grid-template-rows: repeat(1, 400px);margin-top: -50px;margin-bottom: -10px;">
+							  <div class="columns-cenik" style="float: left;padding: 8px;">
+								<ul class="price" style="list-style-type: none;border: 1px solid #eee;margin: 0;padding: 0;-webkit-transition: 0.3s;transition: 0.3s;">					
+								  <li class="header" style="background-color: Transparent;color: white;font-size: 25px;border-bottom: 0px solid #eee;padding: 3px;text-align: center;height: 130px;"><h3 style="font-size: 40px;">Paket 5 ur</h3></li>
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;background-color: white;font-size: 15px;margin-bottom: 20px;margin-top: 20px;color: black;opacity: 0.9;">OSNOVNA ŠOLA</li>
+								  <li style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;color: rgb(249, 66, 95);font-weight: 800;">50 €</li>
+								  <!-- <li class="grey" style="border-bottom: 0px solid #eee;padding: 20px;text-align: center;"><a href="#" class="button button-primary" style="width: 200px;">Izberi</a></li> -->
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;background-color: white;font-size: 15px;margin-bottom: 20px;margin-top: 20px;color: black;opacity: 0.9;">SREDNJE ŠOLE IN GIMNAZIJE</li>
+								  <li style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;color: rgb(249, 66, 95);font-weight: 800;">60 €</li>
+								  <!-- <li class="grey" style="border-bottom: 0px solid #eee;padding: 20px;text-align: center;margin-bottom: 20px"><a href="#" class="button button-primary" style="width: 200px;">Izberi</a></li> -->
+								</ul>
+							  </div>
+				
+							<div class="columns-cenik" style="float: left;padding: 8px;">
+								<ul class="price" style="list-style-type: none;border: 1px solid #eee;margin: 0;padding: 0;-webkit-transition: 0.3s;transition: 0.3s;">					
+								  <li class="header" style="background-color: Transparent;color: white;font-size: 25px;border-bottom: 0px solid #eee;padding: 3px;text-align: center;height: 130px;"><h3 style="font-size: 40px;">Paket 10 ur</h3></li>
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;background-color: white;font-size: 15px;margin-bottom: 20px;margin-top: 20px;color: black;opacity: 0.9;">OSNOVNA ŠOLA</li>
+								  <li style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;color: rgb(249, 66, 95);font-weight: 800;">90 €</li>
+								  <!-- <li class="grey" style="border-bottom: 0px solid #eee;padding: 20px;text-align: center;"><a href="#" class="button button-primary" style="width: 200px;">Izberi</a></li> -->
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;background-color: white;font-size: 15px;margin-bottom: 20px;margin-top: 20px;color: black;opacity: 0.9;">SREDNJE ŠOLE IN GIMNAZIJE</li>
+								  <li style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;color: rgb(249, 66, 95);font-weight: 800;">110 €</li>
+								  <!-- <li class="grey" style="border-bottom: 0px solid #eee;padding: 20px;text-align: center;margin-bottom: 20px"><a href="#" class="button button-primary" style="width: 200px;">Izberi</a></li> -->
+								</ul>
+							  </div>
+				
+							<div class="columns-cenik" style="float: left;padding: 8px;">
+								<ul class="price" style="list-style-type: none;border: 1px solid #eee;margin: 0;padding: 0;-webkit-transition: 0.3s;transition: 0.3s;">					
+								  <li class="header" style="background-color: Transparent;color: white;font-size: 25px;border-bottom: 0px solid #eee;padding: 3px;text-align: center;height: 130px;"><h3 style="font-size: 40px;">Paket 15 ur</h3></li>
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;background-color: white;font-size: 15px;margin-bottom: 20px;margin-top: 20px;color: black;opacity: 0.9;">OSNOVNA ŠOLA</li>
+								  <li style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;color: rgb(249, 66, 95);font-weight: 800;">130 €</li>
+								  <!-- <li class="grey" style="border-bottom: 0px solid #eee;padding: 20px;text-align: center;"><a href="#" class="button button-primary" style="width: 200px;">Izberi</a></li> -->
+								  <li class="grey" style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;background-color: white;font-size: 15px;margin-bottom: 20px;margin-top: 20px;color: black;opacity: 0.9;">SREDNJE ŠOLE IN GIMNAZIJE</li>
+								  <li style="border-bottom: 0px solid #eee;padding: 5px;text-align: center;color: rgb(249, 66, 95);font-weight: 800;">160 €</li>
+								  <!-- <li class="grey" style="border-bottom: 0px solid #eee;padding: 20px;text-align: center;margin-bottom: 20px"><a href="#" class="button button-primary" style="width: 200px;">Izberi</a></li> -->
+								</ul>
+							  </div>
+						</div>
+                    </div>
+                </div>
+			</section>
+			
+
+			<section class="newsletter section">
+                <div class="container-sm">
+                    <div class="newsletter-inner section-inner">
+                        <div class="newsletter-header text-center">
+                            <h2 class="section-title mt-0">Ostani na tekočem!</h2>
+                            <p class="section-paragraph">Naroči se na tedenske brezplačne vsebine in pripomočke, ki vam bodo v pomoč pri učenju matematike in fizike.</p>
+                        </div>
+                        <div class="footer-form newsletter-form field field-grouped">
+                            <div class="control control-expanded">
+                                <input class="input" type="email" name="email" placeholder="Vaš elektronski naslov&hellip;">
+                            </div>
+                            <div class="control">
+                                <a class="button button-primary button-block button-shadow" href="#">Želim vsebine</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</section>
+			
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="site-footer-inner has-top-divider">
+                    <div class="brand footer-brand">
+                        <a href="#">
+							<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+								<title>Laurel</title>
+								<defs>
+									<linearGradient x1="0%" y1="100%" x2="50%" y2="0%" id="logo-footer-a">
+										<stop stop-color="#F9425F" stop-opacity=".8" offset="0%"/>
+										<stop stop-color="#47A1F9" stop-opacity=".16" offset="100%"/>
+									</linearGradient>
+									<linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="logo-footer-b">
+										<stop stop-color="#FDFFDA" offset="0%"/>
+										<stop stop-color="#F97059" stop-opacity=".798" offset="49.935%"/>
+										<stop stop-color="#F9425F" stop-opacity="0" offset="100%"/>
+									</linearGradient>
+								</defs>
+								<g fill="none" fill-rule="evenodd">
+									<path d="M22 19.22c6.627 0 9.593-6.415 9.593-13.042C31.593-.45 28.627.007 22 .007S10 2.683 10 9.31c0 6.628 5.373 9.91 12 9.91z" fill="url(#logo-footer-a)"/>
+									<path d="M13.666 31.889c7.547 0 10.924-7.307 10.924-14.854 0-7.547-3.377-7.027-10.924-7.027C6.118 10.008 0 13.055 0 20.603c0 7.547 6.118 11.286 13.666 11.286z" fill="url(#logo-footer-b)" transform="matrix(-1 0 0 1 24.59 0)"/>
+								</g>
+							</svg>
+                        </a>
+                    </div>
+                    <ul class="footer-links list-reset">
+                        <li>
+                            <a href="#">Kontakt</a>
+                        </li>
+                        <li>
+                            <a href="#">O podjetju</a>
+                        </li>
+                        <li>
+                            <a href="#">Pogosta vprašanja</a>
+                        </li>
+                        <li>
+                            <a href="#">Podpora</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-social-links list-reset">
+                        <li>
+                            <a href="#">
+                                <span class="screen-reader-text">Facebook</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#FFF"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="screen-reader-text">Twitter</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#FFF"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="screen-reader-text">Google</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#FFF"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright">&copy; 2020 Veronika Vodeb s.p., Srebrnik 14A, 3256 Bistrica ob Sotli. <br>Spletna stran izdelana s pomočjo cruip.com/laurel.</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="dist/js/main.min.js"></script>
+</body>
+</html>
