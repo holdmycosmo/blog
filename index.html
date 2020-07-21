@@ -7,54 +7,153 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Countdown Template">
-    <meta name="author" content="Veronika at holdmycosmology.com">    
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
     <link rel="shortcut icon" href="favicon.ico"> 
     
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+    
     <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="style.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-5.css">
 
 </head> 
 
 <body>
+    
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0" style="font-size: 20px;margin-top: -7px;"><a href="index.html">A cosmology student's<br>science blog</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
 
-    <!-- Display the countdown timer in an element -->
-    <div id="content">
-        <p>Website launch in:</p>
-        <p id="demo"></p>
-        <p style="font-weight: 100;">Follow me on IG <a href="https://www.instagram.com/holdmycosmology/" style="color: #4f7a27;">@holdmycosmology</a></p>
-    </div>
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    <img class="profile-image mb-3 rounded-circle mx-auto" src="assets/images/profile.jpeg" alt="image" >			
+					
+					<div class="bio mb-3">Hi, my name is Veronika<br> 
+						and I am a PhD student with<br>a research focus on cosmology.<br><a href="about.html">Find out more about me</a></div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+			            <li class="list-inline-item"><a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC0p0zJ470x9HMOazIDKmypw"><i class="fab fa-youtube fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/holdmycosmology/"><i class="fab fa-instagram fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a target="_blank" rel="noopener noreferrer" href="https://github.com/holdmycosmo"><i class="fab fa-github-alt fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a target="_blank" rel="noopener noreferrer" href="https://quizlet.com/holdmycosmology"><p style="font-weight: 800; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Q</p></a></li>
+			        </ul><!--//social-list-->
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item active">
+					    <a class="nav-link" href="index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
+					</li>
+					<!--<li class="nav-item">
+					    <a class="nav-link" href="blog-list.html"><i class="fas fa-bookmark fa-fw mr-2"></i>All Blog Posts</a>
+					</li>-->
+					<li class="nav-item">
+					    <a class="nav-link" href="about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
+					</li>
+				</ul>
+				
+				<div class="my-2 my-md-3">
+				    <a class="btn btn-primary" href="mailto:veronika@holdmycosmology.com" target="_blank">Get in Touch</a>
+				</div>
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    <!--<section class="cta-section theme-bg-light py-5">
+		    <div class="container text-center">
+			    <h2 class="heading">A blog about science, student life, <br>astrophysics and cosmology</h2>
+			    <div class="intro">Welcome to my blog! Subscribe and get my latest blog posts in your inbox.</div>
+			    <form class="signup-form form-inline justify-content-center pt-3">
+                    <div class="form-group">
+                        <label class="sr-only" for="semail">Your email</label>
+                        <input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail" placeholder="Enter email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+		    </div>
+		</section>-->
+		
+	    <section class="blog-list px-3 py-5 p-md-5">
+
+		    <div class="container">
+			    <!-- <div class="item mb-5">
+				    <div class="media">
+					    <a href="blog-post-about-me-2.html"><img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="assets/images/blog/blog-post-thumb-about-me-2.jpg" alt="image"></a>
+					    <div class="media-body">
+						    <h3 class="title mb-1"><a href="blog-post-about-me-2.html">About Me 2 | My University Experience</a></h3>
+						    <div class="meta mb-1"><span class="date">Published 0 days ago</span><span class="time">5 min read</span><span class="comment"><a href="#">0 comments</a></span></div>
+						    <div class="intro">I am starting a blog that will help me and others learn more and learn quicker. Writing about the projects that I am working on, as well as the student courses that I am building... <a class="more-link" href="blog-post-about-me-2.html">Read more &rarr;</a></div>
+					    </div>
+				    </div>
+				</div> -->
+				
+				<!-- <div class="item mb-5">
+					<div class="media">
+						<a href="blog-post-about-me-1.html"><img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="assets/images/blog/blog-post-thumb-about-me-1.jpg" alt="image"></a>
+						<div class="media-body">
+							<h3 class="title mb-1"><a href="blog-post-about-me-1.html">About Me 1 | Launching The Blog</a></h3>
+							<div class="meta mb-1"><span class="date">Published 0 days ago</span><span class="time">5 min read</span><span class="comment"><a href="#">0 comments</a></span></div>
+							<div class="intro">I am starting a blog that will help me and others learn more and learn quicker. Writing about the projects that I am working on, as well as the student courses that I am building... <a class="more-link" href="blog-post-about-me-1.html">Read more &rarr;</a></div>
+						</div>
+					</div>
+				</div> -->
+		   
+			    <!--<nav class="blog-nav nav nav-justified my-5">
+				  <a class="nav-link-prev nav-item nav-link d-none rounded-left" href="#">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
+				  <a class="nav-link-next nav-item nav-link rounded" href="blog-list.html">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
+				</nav>-->
+				
+		    </div>
+	    </section>
+	    
+	    <footer class="footer text-center py-2 theme-bg-dark" style="background-color: #142d72!important;">
+		   
+	        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright" >Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers<br>&copy 2020 holdmycosmology.com</small>
+		   
+	    </footer>
+    
+    </div><!--//main-wrapper-->
+    
+    
+    
+    
+    <!-- *****CONFIGURE STYLE (REMOVE ON YOUR PRODUCTION SITE)****** -->  
+    <!-- <div id="config-panel" class="config-panel d-none d-lg-block">
+        <div class="panel-inner">
+            <a id="config-trigger" class="config-trigger config-panel-hide text-center" href="#"><i class="fas fa-cog fa-spin mx-auto" data-fa-transform="down-6" ></i></a>
+            <h5 class="panel-title">Choose Colour</h5>
+            <ul id="color-options" class="list-inline mb-0">
+                <li class="theme-1 active list-inline-item"><a data-style="assets/css/theme-1.css" href="#"></a></li>
+                <li class="theme-2  list-inline-item"><a data-style="assets/css/theme-2.css" href="#"></a></li>
+                <li class="theme-3  list-inline-item"><a data-style="assets/css/theme-3.css" href="#"></a></li>
+                <li class="theme-4  list-inline-item"><a data-style="assets/css/theme-4.css" href="#"></a></li>
+                <li class="theme-5  list-inline-item"><a data-style="assets/css/theme-5.css" href="#"></a></li>
+                <li class="theme-6  list-inline-item"><a data-style="assets/css/theme-6.css" href="#"></a></li>
+                <li class="theme-7  list-inline-item"><a data-style="assets/css/theme-7.css" href="#"></a></li>
+                <li class="theme-8  list-inline-item"><a data-style="assets/css/theme-8.css" href="#"></a></li>
+            </ul>
+            <a id="config-close" class="close" href="#"><i class="fa fa-times-circle"></i></a>
+        </div> 
+    </div> --> <!--//configure-panel-->
+
+    
+       
+    <!-- Javascript -->          
+    <script src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script> 
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+
+    <!-- Style Switcher (REMOVE ON YOUR PRODUCTION SITE) -->
+    <!-- <script src="assets/js/demo/style-switcher.js"></script> -->
     
 
-    <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("Jul 21, 2020 18:00:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-
-    // Get today's date and time
-    var now = new Date().getTime();
-
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Display the result in the element with id="demo"
-    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
-
-    // If the count down is finished, write some text 
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "EXPIRED";
-    }
-    }, 1000);
-    </script>
-
 </body>
+</html> 
+
