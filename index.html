@@ -13,10 +13,45 @@
     
     <!-- FontAwesome JS-->
     <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
-    
+	<script src="//code.jquery.com/jquery-git1.js"></script>
+	<script>
+		$(document).ready(function(){
+		// Add smooth scrolling to all links
+		$("a").on('click', function(event) {
+
+			// Make sure this.hash has a value before overriding default behavior
+			if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			event.preventDefault();
+
+			// Store hash
+			var hash = this.hash;
+
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 800, function(){
+		
+				// Add hash (#) to URL when done scrolling (default click behavior)
+				window.location.hash = hash;
+			});
+			} // End if
+		});
+		});
+	</script>
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/theme-5.css">
 
+	<style>
+		.fakelink:hover {
+			text-decoration: underline!important;
+			cursor: pointer;
+		}
+		.fakelinkimg:hover {
+			cursor: pointer;
+		}
+	</style>
 </head> 
 
 <body>
@@ -67,20 +102,127 @@
     <div class="main-wrapper">
 	    <section class="cta-section theme-bg-light py-5">
 		    <div class="container text-center">
-			    <h2 class="heading">A blog about science, student life, <br>astrophysics and cosmology</h2>
-			    <p>First blog post coming Wednesday, 22nd of July, 6pm!</p>
-			    <!--<div class="intro">Welcome to my blog! Subscribe and get my latest blog posts in your inbox.</div>
+			    <h2 class="heading">A blog about science, student life and cosmology</h2>
+			    <p>New blog posts every <b>Tuesday</b> and <b>Thursday</b>, 6pm (GMT+2).</p>
+			    <div class="intro">Subscribe and get them straight into your inbox, or follow me on <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/holdmycosmology/">Instagram</a> to get notified!</div>
 			    <form class="signup-form form-inline justify-content-center pt-3">
                     <div class="form-group">
                         <label class="sr-only" for="semail">Your email</label>
                         <input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail" placeholder="Enter email">
                     </div>
                     <button type="submit" class="btn btn-primary">Subscribe</button>
-                </form>-->
-		    </div>
+				</form>
+			</div>
 		</section>
+		<section class="blog-list px-3 py-5 p-md-5">
+			<div class="container">
+				<h3 style="padding-left: 40px;padding-bottom: 5px;text-align: center;">View <a href="#all-posts">all posts</a> or search by <a href="#home-category-list">blog post series</a></h3>
+				<ul id="home-category-list" style="list-style-type: none;padding-top: 5px;"></ul>
+				<p id="category-name" style="margin-left: 40px;margin-top: 30px;margin-bottom: 30px;"></p>
+				<ul id="home-post-list" style="list-style-type: none;text-align: left;"></ul>
+				<hr>
+				<h3 style="padding-left: 40px;padding-bottom: 30px;padding-top: 20px;" id="all-posts">All posts</h3>
+				<ul id="home-post-all" style="list-style-type: none;text-align: left;"></ul>
+			</div>
+		</section>
+
+		<!--<section class="blog-list px-3 py-5 p-md-5">
+			<div class="container">
+			</div>
+		</section>-->
+
+					<script>
+						var category = [
+								{
+									categoryName: "A Very Brief Introduction To Cosmology",
+									imageName: "assets/images/profile.jpeg",
+									content: "<div class='item mb-5'><div class='media'><a href='blog-post-about-me-2.html'><img class='mr-3 img-fluid post-thumb d-none d-md-flex' src='assets/images/blog/blog-post-thumb-about-me-2.jpg' alt='image'></a><div class='media-body'><h3 class='title mb-1'><a href='blog-post-about-me-2.html'>Get To Know Me 2 | My University Experience</a></h3><div class='meta mb-1'><span class='date'>Published 0 days ago</span><span class='time'>5 min read</span><span class='comment'><a href='#''>0 comments</a></span></div><div class='intro'>I am starting a blog that will help me and others learn more and learn quicker. Writing about the projects that I am working on, as well as the student courses that I am building... <a class='more-link' href='blog-post-about-me-2.html'>Read more</a></div></div></div></div>"
+								},
+								{
+									categoryName: "Get To Know Me",
+									imageName: "assets/images/get-to-know-me.jpeg",
+									content: "<div class='item mb-5'><div class='media'><a href='blog-post-about-me-2.html'><img class='mr-3 img-fluid post-thumb d-none d-md-flex' src='assets/images/blog/blog-post-thumb-about-me-2.jpg' alt='image'></a><div class='media-body'><h3 class='title mb-1'><a href='blog-post-about-me-2.html'>Get To Know Me 2 | My University Experience</a></h3><div class='meta mb-1'><span class='date'>Published 0 days ago</span><span class='time'>5 min read</span><span class='comment'><a href='#''>0 comments</a></span></div><div class='intro'>I am starting a blog that will help me and others learn more and learn quicker. Writing about the projects that I am working on, as well as the student courses that I am building... <a class='more-link' href='blog-post-about-me-2.html'>Read more</a></div></div></div></div>"
+								},
+								{
+									categoryName: "Get To Know Me",
+									imageName: "assets/images/blog/get-to-know-me.jpeg",
+									content: "<div class='item mb-5'><div class='media'><a href='blog-post-about-me-1.html'><img class='mr-3 img-fluid post-thumb d-none d-md-flex' src='assets/images/blog/blog-post-thumb-about-me-1.jpg' alt='image'></a><div class='media-body'><h3 class='title mb-1'><a href='blog-post-about-me-1.html'>Get To Know Me 1 | Launching The Blog</a></h3><div class='meta mb-1'><span class='date'>Published 0 days ago</span><span class='time'>5 min read</span><span class='comment'><a href='#''>0 comments</a></span></div><div class='intro'>I am starting a blog that will help me and others learn more and learn quicker. Writing about the projects that I am working on, as well as the student courses that I am building... <a class='more-link' href='blog-post-about-me-1.html'>Read more</a></div></div></div></div>"
+								}
+								];
+
+								//generate a category list without repeated categories
+								function newCategoryList(){
+								var categoryList = [];
+								for(var a=0; a<category.length; a++){
+									var unique = true;
+									for(var b=0; b<categoryList.length; b++){
+									if(category[a].categoryName == categoryList[b].name) unique = false;    
+									}
+									if(unique) categoryList.push({
+									name: category[a].categoryName,
+									img: category[a].imageName
+									});
+								}
+								return categoryList;
+								}
+
+								//add category to home list
+								function listCategories(id) {
+								$('#home-category-list').append('<li class="nav" data-id="'+id+'" style="margin:10px;margin-left:0px"><img class="fakelinkimg" style="width:50px;height:50px;margin-right:10px" src="'+categoryList[id].img+'"/><p class="fakelink" style="padding-top:15px">'+categoryList[id].name+'</p></li>');
+								}
+
+								//list all activities in the respective category
+								function listActivities(id){
+								$('#home-post-list').html('');
+								var cat = categoryList[id];
+								for(var a=0; a<category.length; a++){
+									if(category[a].categoryName == cat.name){
+									newActivity(a);
+									}
+								}
+								}
+
+
+								//add new Activity to the list
+								function newActivity(id){  
+								//var img = $('<img src="'+category[id].imageName+'" style="width:50px;height:50px">');
+								var title = $('<h3>'+category[id].categoryName+'</h3>');
+								var content = $(category[id].content);
+								//var li = $('<p>').append(title).appendTo($('#home-category-name'));
+								var li = $('<li>').append(content).appendTo($('#home-post-list'));
+								}
+								
+								//generate the list of categories  
+								var categoryList = newCategoryList();
+
+								//list all categories
+								$.each(categoryList, listCategories);
+								
+								//attach category click event
+								$("#home-category-list").on("click singletap", "li", function(){
+								var id = $(this).data("id");
+								var title = $('<h3>Series | '+category[id].categoryName+'</h3>');
+								$('#category-name').empty();
+								var li = $('<p>').append(title).appendTo($('#category-name'));
+								listActivities(id);
+								$("html, body").animate({ scrollTop: $('#category-name').offset().top }, 800);
+								//scrollTop: $(hash).offset().top}, 800
+								//$("html","body").document.getElementById("category-name").scrollIntoView();
+								//var elmnt = document.getElementById("category-name");
+								//elmnt.scrollIntoView();
+								});
+
+								for(var a=0; a<category.length; a++){
+									var content = $(category[a].content);
+									var li = $('<li>').append(content).appendTo($('#home-post-all'));
+								}
+
+								//populate the Activity list
+								//newActivity(0);
+
+					</script>
 		
-	    <section class="blog-list px-3 py-5 p-md-5">
+	    <!--<section class="blog-list px-3 py-5 p-md-5">
 
 		    <div class="container">
 			    <div class="item mb-5">
@@ -93,6 +235,12 @@
 					    </div>
 				    </div>
 				</div>
+			</div>
+		</section>-->
+		
+		<!--<section class="blog-list px-3 py-5 p-md-5">
+
+		    <div class="container">
 				
 				<div class="item mb-5">
 					<div class="media">
@@ -103,15 +251,15 @@
 							<div class="intro">I am starting a blog that will help me and others learn more and learn quicker. Writing about the projects that I am working on, as well as the student courses that I am building... <a class="more-link" href="blog-post-about-me-1.html">Read more &rarr;</a></div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 		   
 			    <!--<nav class="blog-nav nav nav-justified my-5">
 				  <a class="nav-link-prev nav-item nav-link d-none rounded-left" href="#">Previous<i class="arrow-prev fas fa-long-arrow-alt-left"></i></a>
 				  <a class="nav-link-next nav-item nav-link rounded" href="blog-list.html">Next<i class="arrow-next fas fa-long-arrow-alt-right"></i></a>
 				</nav>-->
 				
-		    </div>
-	    </section>
+		    <!--</div>
+	    </section>-->
 	    
 	    <footer class="footer text-center py-2 theme-bg-dark" style="background-color: #142d72!important;">
 		   
